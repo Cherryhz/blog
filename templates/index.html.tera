@@ -1,0 +1,39 @@
+{% extends "base" %}
+
+{% block header %}
+    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+                <h1> Cherry Hanquez </h1>
+                <span class="subheading"> A Learning Journey to Web Development </span>
+                <span class="subheading"> Rust  Rocket  Tera  HTML  CSS  Javascript </span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </header>
+{% endblock header %}
+
+{% block posts %}
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-preview">
+                <h2 class="post-title">
+                    {{ title }}
+                </h2>
+                <h3 class="post-subtitle">
+                    {{ subtitle }}
+                </h3>
+            </div>
+        </div>
+        </div>  
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts →</a>
+        </div>
+    </div>
+{% endblock posts %}
